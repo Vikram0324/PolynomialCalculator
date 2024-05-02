@@ -5,6 +5,7 @@ x is used as polynomial variable.
 
 ### Creating/Assigning polynomials
 `polynomial-name := literal-polynomial` for literal polynomials without any brackets within them
+
 `polynomial-name = named-polynomial-expression` for any polynomial expression
 
 polynomials without any named-polynomials within them are called literal polynomials.
