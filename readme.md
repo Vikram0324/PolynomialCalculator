@@ -66,6 +66,7 @@ a, b, c will be stored in the memory
 - While the characters x and X is allowed in the name of the polynomial, the polynomial name should not consist solely of either “x” or “X”. In other words, the variable name should be more descriptive or specific than just being named either “x” or “X”.
 
 Note: *The program uses the name “ans” to store unnamed expressions. While you can still use it, please note that it may get overwritten by the program.*
+<hr>
 
 ### Arithmetic Operations on Saved Polynomials
 ```text
@@ -121,6 +122,7 @@ a+x^ 3 -b
 Error occurred while parsing expression:
 Unknown element: x^
 ```
+<hr>
 
 ### Display Polynomials (#)
 Display command starts with "#"
@@ -133,6 +135,7 @@ These polynomials (poly-name1, poly-name2 ...) will be printed to the screen
            c = x -1
            d = x^3 -x^2 +2
 ```
+<hr>
 
 ### Delete Polynomials (!)
 Delete command starts with "!"
@@ -143,6 +146,7 @@ These polynomials (poly-name1, poly-name2 ...) will be deleted from the memory
 ERROR: Unknown polynomial k
 ```
 Known polynomials will be deleted. This error message will be printed if we try to delete unknown polynomials.
+<hr>
 
 ### Display Entire Database (## or $)
 command - "##" or "\$"
@@ -165,6 +169,7 @@ for empty database
 $
 Database is empty
 ```
+<hr>
 
 ### Delete Entire Database (!!)
 command - "!!"
@@ -180,6 +185,7 @@ Cleared entire database
 Delete entire database?[Y/N]: n
 Deletion Cancelled. Database remains unchanged
 ```
+<hr>
 
 ### Write Polynomials to a file (@w)
 command - "@w"
@@ -200,6 +206,7 @@ out.txt
 ```text
 NULL
 ```
+<hr>
 
 ### Read Polynomials from a file (@r)
 command - "@r"
@@ -227,6 +234,7 @@ $
 ```
 
 Note: To read polynomials from file, they must be in the literal polynomial assignment format `polylnomial-name := polynomial`. Otherwise that line will be ignored.
+<hr>
 
 ### Exit command (*)
 command - "\*"
@@ -235,6 +243,7 @@ Syntax: "\*"
 *
 The program has terminated
 ```
+<hr>
 
 ### Rename Polynomials (^)
 rename command starts with "^"
@@ -258,6 +267,7 @@ ERROR: Unknown Polynomial d
 ^ k b;
 Polynomial b already exists in database
 ```
+<hr>
 
 ### Polynomial Input Command (>)
 This command was used in the previous versions. Now we have ":=" and "="
@@ -279,6 +289,7 @@ ERROR: Could not parse the polynomial:
 Enter the polynomial b: x^3 -4
 Entered polynomial: b = x^3 -4
 ```
+<hr>
 
 ### Multiple Commands in Single Line
 You can enter multiple commands in a single line by separating them with with semicolon ";"
