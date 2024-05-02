@@ -3,6 +3,7 @@ This is a basic polynomial calculator built to handle addition, subtraction, and
 
 x is used as polynomial variable.
 <hr>
+
 ### Creating/Assigning polynomials
 `polynomial-name := literal-polynomial` for literal polynomials without any brackets within them
 
@@ -201,7 +202,7 @@ out.txt
            c := 4x^3 -7x^2 +4x -1 
            d := 4x^3 -6x^2 +7x -4 
 ```
-If database is empty, "NULL" is written to the file
+If database is empty, `NULL` is written to the file
 out.txt
 ```text
 NULL
