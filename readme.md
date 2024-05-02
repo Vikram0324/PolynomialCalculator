@@ -2,7 +2,7 @@
 This is a basic polynomial calculator built to handle addition, subtraction, and multiplication operations on polynomials. Polynomials are read from command line or from text files. Polynomials can be stored with a variable name, arithmetic operations can be performed on them. Polynomials can be written to command line or to text files.
 
 x is used as polynomial variable.
-
+<hr>
 ### Creating/Assigning polynomials
 `polynomial-name := literal-polynomial` for literal polynomials without any brackets within them
 
@@ -201,7 +201,7 @@ out.txt
            c := 4x^3 -7x^2 +4x -1 
            d := 4x^3 -6x^2 +7x -4 
 ```
-If database is empty
+If database is empty, "NULL" is written to the file
 out.txt
 ```text
 NULL
