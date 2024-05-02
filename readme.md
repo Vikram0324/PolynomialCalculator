@@ -33,6 +33,7 @@ a := x^3 -3x^2 +5;
 a will be stored in the memory
 
 Input format of each term in polynomial `<sign>(+/-) <co-eff>x^<power> …`
+
 You can ignore writing co-eff if it is one, similarly you can ignore writing "^1" if power is one, and for constant terms, you can simply write the co-eff.
 Both x and X will be considered as variable of polynomial.
  
@@ -40,6 +41,7 @@ While there can be white spaces between signs and terms, but white spaces should
 For Example:
 `x^3 - 3x^2 + 1`and `x^2 +1` are valid.
 `x ^3- 3 x^2 +1` and `x ^ 2 +1` are invalid.
+
 Error messages will be printed for invalid polynomials.
 ```text
 a := 3x^ 2 +4
@@ -127,7 +129,9 @@ Unknown element: x^
 
 ### Display Polynomials (#)
 Display command starts with "#"
+
 Syntax: "# poly-name1 poly-name2 ..."
+
 These polynomials (poly-name1, poly-name2 ...) will be printed to the screen
 ```text
 # a b c d
@@ -140,7 +144,9 @@ These polynomials (poly-name1, poly-name2 ...) will be printed to the screen
 
 ### Delete Polynomials (!)
 Delete command starts with "!"
+
 Syntax: "! poly-name1 poly-name2 ..."
+
 These polynomials (poly-name1, poly-name2 ...) will be deleted from the memory
 ```text
 ! d c k
@@ -151,7 +157,9 @@ Known polynomials will be deleted. This error message will be printed if we try 
 
 ### Display Entire Database (## or $)
 command - "##" or "\$"
+
 Syntax: ## or $
+
 All the known polynomials will be printed
 ```text
 $
@@ -173,8 +181,11 @@ Database is empty
 <hr>
 
 ### Delete Entire Database (!!)
+
 command - "!!"
+
 Syntax: !!
+
 You will be prompted again to confirm the deletion of the entire database.
 ```text
 !!
@@ -190,6 +201,7 @@ Deletion Cancelled. Database remains unchanged
 
 ### Write Polynomials to a file (@w)
 command - "@w"
+
 Syntax: @w filename
 ```text
 @w out.txt
@@ -211,6 +223,7 @@ NULL
 
 ### Read Polynomials from a file (@r)
 command - "@r"
+
 Syntax: @r filename
 
 sample.txt
@@ -239,6 +252,7 @@ Note: To read polynomials from file, they must be in the literal polynomial assi
 
 ### Exit command (*)
 command - "\*"
+
 Syntax: "\*"
 ```text
 *
@@ -248,6 +262,7 @@ The program has terminated
 
 ### Rename Polynomials (^)
 rename command starts with "^"
+
 Syntax: "^ previous-name updated-name"
 ```text
 a := 3x-2; b := x^2 -4;
@@ -273,7 +288,9 @@ Polynomial b already exists in database
 ### Polynomial Input Command (>)
 This command was used in the previous versions. Now we have ":=" and "="
 Input command starts with ">"
+
 syntax: "> poly-name1 poly-name2 ..."
+
 Program will keep asking you to enter the polynomial until you enter a valid polynomial. It will print the read polynomial.
 ```text
 > a b
